@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+button{
+    font-size: 90%;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border: none;
+    font-size: 80%;
+    padding: 10px;
+}
+
+h1{
+    padding: 10px;
+    font-size: 225%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    color: #fff;
+}
+h2{
+    padding: 10px;
+    font-size: 175%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #fff;
+}
+h3{
+    padding: 125px;
+    font-size: 100%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+}
+h4{
+    padding: 10px;
+    font-size: 100%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    color: #fff;
+}
+h5{
+    font-size: 75%;
+    padding: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+p{
+    padding: 10px;
+    font-size: 80%;
+}
+
+.row-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+}
+.row-center{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+}
+.row-stretch{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.row{
+    display: flex;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.space{
+    margin-top: 30px;
+}
+
+/* above part is re-usable component */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 16px;
+    border-bottom: 2px solid #ececec;
+    
+}
+
+.logo{
+    
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+.logo a{
+    color: orange;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all .2s;
+}
+
+.logo a:hover{
+    color: #000000;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    padding: 10px;
+}
+nav ul li{
+    margin-left: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #000000;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all .2s;
+}
+
+nav ul li a:hover{
+    background-color: #d0d2d4;
+}
+nav ul li .active{
+    color: #ff0000;
+}
+
+nav ul li i{
+    margin-top: 15x;
+}
+.icons{
+    padding: 10px;
+}
+.icons i{
+    font-size: 100%;
+    margin-left: 10px;
+    transition: color .2s;
+}
+i span{
+    font-size: 80%;
+}
+
+.icons i:hover{
+    color: red;
+}
+
+.icons input[type=text] {
+    font-size: 14px;
+    padding: 6px;
+    border: 1px solid #e9e9e9;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.hero-contain{
+    width: 100%;
+    height: 86vh;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.hero-content{
+    
+    padding-top: 40px;
+    flex-grow: 2;
+}
+.hero-image{
+    
+}
+.hero-content .button{
+    padding: 20px;
+}
+.hero-content .button a button{
+    border-radius: 40px;
+    padding: 20px;
+    width: 40%;
+    background-color: orange;
+    font-weight: 700;
+}
+.hero-content .button a button i{
+    background-color: #ff7504;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* week offer */
+
+.week-offer{
+    background-color: #222222;
+    
+}
+.down{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.offers span{
+    font-size: 200%;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 9px;
+    margin-left: 10px;
+}
+.offers i{
+    font-size: 200%;
+    color: white;
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 15px;
+    width: 28%;
+}
+.w40{
+    
+}
+.background{
+    background-color: #f3f3f3;
+    color: #000000;
+    background-image: url(img/card2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-content{
+    width: 60%;
+    
+}
+.card .image{
+    width: 10%;
+    height: 10%;
+    padding-right: 7px;
+    
+}
+.card h5{
+    color: #000;
+}
+.card h6{
+    margin-top: 10px;
+    color: #8a8a8a;
+    font-size: 75%;
+}
+.card p{
+    margin-top: 10px;
+    font-size: 75%;
+    text-transform: uppercase;
+}
+.card span{
+    margin-top: 10px;
+    font-size: 70%;
+    color: #ff0000;
+}
+.card a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.card a button{
+    height: 35px;
+    width: 100%;
+    font-size: 75%;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* section suggestion */
+
+.black{
+    color: black;
+}
+
+.first{
+    padding-top: 40px;
+}
+
+/* most-popular section */
+
+.most-popular{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.dot-width{
+    width: 100%;
+    justify-content: center;
+}
+
+.dots{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #b4b3b3;
+    margin-left: 5px;
+}
+.dot-active{
+    background-color: red;
+}
+
+
+
+footer{
+    margin-top: 80px;
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+footer .row-stretch .content{
+    width: 20%;
+}
+footer .form{
+    width: 60%;
+    padding-top: 65px;
+}
+.form-input{
+    width: 80%;
+    background-color: #1a1a1a;
+    border: 1px solid red;
+    border-radius: 8px;
+    font-size: 70%;
+    padding: 10px;
+}
+.form button{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 70%;
+}
+.row span{
+    font-size: 75%;
+    width: 33%;
+}
+.red{
+    color: red;
+}
+
+.row .cont{
+    width: 30%;
+    padding-top: 30px;
+}
+.information{
+    width: 50%;
+}
+
